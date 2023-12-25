@@ -1,13 +1,91 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* layout */
+:root {
+  --primary: #1a7bac;
+  --error: #e7195a;
+}
 body {
+  background: #f1f1f1;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* NAV BAR */
+
+.navbar {
+  margin: .5em .5em;
+  padding: .5em .5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2b2b2b;
+  border-radius: .5em;
+  position: sticky;
+  top: 0;
+  transition: 0.2s;
+}
+
+
+.navbar h1 {
+  font-size: 1.5em;
+  margin: 0;
+  color: white;
+}
+
+.navbar h3 {
+  font-size: 1em;
+  margin: 0;
+  color: white;
+  padding: 0 1.5em;
+  transition: 0.1s;
+}
+
+.navbar h3:hover {
+  color: #038aff;
+  transition: 0.15s;
+}
+
+.navbar .link {
+  text-decoration: none;
+}
+
+.navbar .menu-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HOME */
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ABOUT */
+
+.about {
+  margin: 1em .5em;
+  padding: 2em;
+  background-color: white;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: .5em;
+  height: 70vh;
+}
+
+.about p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.about .photo {
+  width: 10em;
+  border-radius: 50%;
+  margin-bottom: 2em;
 }
