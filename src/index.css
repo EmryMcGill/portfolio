@@ -97,7 +97,7 @@ body {
 .projects {
   width: 100%;
   display: flex;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -119,6 +119,7 @@ body {
 .projects .title {
   margin: 0;
   margin-left: .5em;
+  margin-top: .5em;
 }
 
 .project-card .img-container {
@@ -172,7 +173,7 @@ body {
 .experience {
   width: 100%;
   display: flex;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -182,15 +183,49 @@ body {
 }
 
 .experience .title {
+  margin: 0;
   margin-left: .5em;
+  margin-top: .5em;
 }
 
 .experience-card {
-  padding: 1em;
+  padding: 0;
+  padding-left: .5em;
   margin: .5em;
+  padding-bottom: 0;
   background-color: white;
   display: flex;
-  align-items: start;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   border-radius: .5em;
+  overflow: hidden;
+  width: 90vw;
+}
+
+.experience-card .info-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.experience-card img {
+  height: 10em;
+}
+
+.experience-card h1 {
+  margin: 0;
+  margin-top: .5em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.experience-card h2 {
+  margin: 0;
+  margin-top: .5em;
+  font-size: 1em;
+}
+
+.experience-card .date {
+  margin: 0;
+  margin-bottom: 0;
 }
