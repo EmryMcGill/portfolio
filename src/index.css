@@ -120,6 +120,7 @@ body {
   margin: 0;
   margin-left: .5em;
   margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 .project-card .img-container {
@@ -168,6 +169,77 @@ body {
   font-size: 1.5em;
 }
 
+/* SKILLS */
+
+.skills .title {
+  margin: 0;
+  margin-left: .5em;
+  margin-top: 2em;
+  margin-bottom: .5em;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  padding: 1em;
+  margin: .5em;
+  background-color: white;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 50%;
+}
+
+.skill-card .img-container {
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+}
+
+.skill-card .img-container .desc-container {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card .img-container .desc {
+  margin: 1em;
+  text-align: center;
+  font-weight:500;
+  font-size: 1em;
+  color: white;
+}
+
+.skill-card .img-container:hover .desc-container {
+  visibility: visible;
+}
+
+
+.skill-card .title-container {
+  width: 100%;
+}
+
 /* EXPERIENCE */
 
 .experience {
@@ -185,13 +257,14 @@ body {
 .experience .title {
   margin: 0;
   margin-left: .5em;
-  margin-top: .5em;
+  margin-top: 2em;
+  margin-bottom: .2em;
 }
 
 .experience-card {
   padding: 0;
   padding-left: .5em;
-  margin: .5em;
+  margin: 1em;
   padding-bottom: 0;
   background-color: white;
   display: flex;
@@ -228,4 +301,71 @@ body {
 .experience-card .date {
   margin: 0;
   margin-bottom: 0;
+}
+
+/* EDUCATION */
+
+.education {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education .title {
+  margin: 0;
+  margin-left: .5em;
+  margin-top: 2em;
+  margin-bottom: .2em;
+}
+
+.education-card {
+  padding: 0;
+  padding-left: .5em;
+  margin: 1em;
+  padding-bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: .5em;
+  overflow: hidden;
+  width: 90vw;
+}
+
+.education-card .info-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.education-card img {
+  height: 10em;
+}
+
+.education-card h1 {
+  margin: 0;
+  margin-top: .5em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.education-card h2 {
+  margin: 0;
+  margin-top: .5em;
+  font-size: 1em;
+}
+
+.education-card .date {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.education-card img {
+  padding-right: .5em;
 }

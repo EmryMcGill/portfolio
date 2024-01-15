@@ -10,6 +10,16 @@ const Experience = () => {
                 position='Systems Analyst Intern'
                 desc='a sample description for this job bla bla do do'
                 date='2022-2023' />
+                <ExperienceCard 
+                company='Columbia Basin Trust' 
+                position='Systems Analyst Intern'
+                desc='a sample description for this job bla bla do do'
+                date='2022-2023' />
+                <ExperienceCard 
+                company='Columbia Basin Trust' 
+                position='Systems Analyst Intern'
+                desc='a sample description for this job bla bla do do'
+                date='2022-2023' />
             </div>
         </div>
     )
