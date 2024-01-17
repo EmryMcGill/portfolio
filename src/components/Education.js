@@ -1,4 +1,6 @@
 import EducationCard from "./EducationCard"
+import mcgilllogo from '../mcgilllogo.jpg'
+
 
 const Education = () => {
     return (
@@ -10,7 +12,8 @@ const Education = () => {
                     program='B.Sc Major Computer Science'
                     desc='I am currently in my third year of 
                     Computer Science at McGill University'
-                    date='Sept 2021 - current' />
+                    date='Sept 2021 - current'
+                    img={mcgilllogo} />
             </div>
         </div>
     )

@@ -1,6 +1,5 @@
-import mcgilllogo from '../mcgilllogo.jpg'
 
-const EducationCard = ({ school, program, desc, date, location }) => {
+const EducationCard = ({ school, program, desc, date, location, img }) => {
     return (
         <div className="education-card">
             <div className="info-container">
@@ -13,7 +12,7 @@ const EducationCard = ({ school, program, desc, date, location }) => {
                     <h3 className="date">{date}</h3>
                 </div>
             </div>
-            <img src={mcgilllogo}></img>
+            <img src={img}></img>
     </div>
     )
 }

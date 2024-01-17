@@ -203,28 +203,33 @@ body {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill-card {
-  padding: 1em;
+  padding: 0em;
   margin: .5em;
   background-color: white;
   display: flex;
   align-items: start;
   flex-direction: column;
-  border-radius: 50%;
 }
 
 .skill-card .img-container {
-  border-radius: 50%;
   margin: 0;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   overflow: hidden;
   width: 15vw;
   height: 15vw;
+}
+
+.skill-card .photo {
+  width: 80%;
+  height: 80%;
 }
 
 .skill-card .img-container .desc-container {
@@ -277,11 +282,11 @@ body {
 
 .experience-card {
   padding: 0;
-  padding-left: .5em;
   margin: 1em;
   padding-bottom: 0;
   background-color: white;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-direction: row;
   border-radius: .5em;
@@ -293,15 +298,27 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
+  padding: .5em;
+}
+
+.experience-card .company-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-card .location {
+  padding-left: .5em;
+  font-size: 1em;
 }
 
 .experience-card img {
   height: 10em;
+  margin-right: .5em;
 }
 
 .experience-card h1 {
   margin: 0;
-  margin-top: .5em;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -313,16 +330,15 @@ body {
 }
 
 .experience-card .date-container {
-  padding: 0;
+  margin-bottom: 0;
 }
 
 .experience-card .date {
   margin: 0;
-  margin-bottom: .5em;
   padding: .5em;
   border-radius: .5em;
   background-color: rgba(255, 240, 0, .4);
-  font-size: 1em;
+  font-size: .8em;
 }
 
 /* EDUCATION */
@@ -347,12 +363,12 @@ body {
 
 .education-card {
   padding: 0;
-  padding-left: .5em;
   margin: 1em;
   padding-bottom: 0;
   background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   border-radius: .5em;
   overflow: hidden;
@@ -363,6 +379,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
+  padding: .5em;
 }
 
 .education-card img {
@@ -371,7 +389,6 @@ body {
 
 .education-card h1 {
   margin: 0;
-  margin-top: .5em;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -384,15 +401,14 @@ body {
 
 .education-card .date {
   margin: 0;
-  margin-bottom: .5em;
   padding: .5em;
   border-radius: .5em;
   background-color: rgba(255, 240, 0, .4);
-  font-size: 1em;
+  font-size: .8em;
 }
 
 .education-card img {
-  padding-right: .5em;
+  margin-right: .5em;
 }
 
 /* CONTACT */
