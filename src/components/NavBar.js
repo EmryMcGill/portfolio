@@ -18,13 +18,17 @@ const NavBar = () => {
             borderRadius: scroll ? "0" : "0.5em", 
             transition: "0.2s"}}>
             
-            <div><h1 className='title' onClick={() =>
-          window.scrollTo({
-            left: 0,
-            top: 0,
-            behavior: "smooth",
-          })
-        }>Emry McGill</h1><h1 className='port'> Portfolio</h1></div>
+            <div className='title-container'>
+                <h1 className='title'>Emry McGill</h1>
+                <h1 className='port'
+                    onClick={() =>
+                        window.scrollTo({
+                          left: 0,
+                          top: 0,
+                          behavior: "smooth",
+                        })
+                      }>Portfolio</h1>
+            </div>
 
             <div className='menu-buttons'>
                 <Link className='link' smooth to='projects' offset={-50}>

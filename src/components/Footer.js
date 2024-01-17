@@ -7,9 +7,12 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <div contact-container>
+            <div className="contact-container">
                 <h2>Contact</h2>
-                <button onClick={copyEmail}>emrymcgill@gmail.com</button>
+                <button className="email-btn" onClick={copyEmail}>emrymcgill@gmail.com
+                </button>
+                <a className="git-btn"target="_blank"  href="https://www.linkedin.com/in/emry-mcgill-ba8921238">LinkedIn</a>
+                <a className="git-btn"target="_blank"  href="https://github.com/emrymcgill">Github</a>
             </div>
         </div>
     )

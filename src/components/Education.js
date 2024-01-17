@@ -10,7 +10,7 @@ const Education = () => {
                     program='B.Sc Major Computer Science'
                     desc='I am currently in my third year of 
                     Computer Science at McGill University'
-                    date='2021 - current' />
+                    date='Sept 2021 - current' />
             </div>
         </div>
     )

@@ -11,7 +11,6 @@ const ExperienceCard = ({ company, position, desc, date, location }) => {
                 </div>
                 <div className='date-container'>
                     <h3 className="date">{date}</h3>
-                    <h3 className="location">{location}</h3>
                 </div>
             </div>
             <img src={cbt}></img>
