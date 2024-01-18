@@ -1,9 +1,18 @@
 import { useState } from 'react'
+import ProjectModal from './ProjectModal';
 
-const ProjectCard = ({title, desc, img}) => {
+const ProjectCard = ({title, desc, descDetail, img}) => {
+
+    const [details, setDetails] = useState(false);
+
+    const handleClick = () => {
+        setDetails(!details);
+    }
 
     return (
-        <div className="project-card">
+        <div>
+        {!details ? 
+        <div className="project-card" onClick={handleClick}>
             <div className='img-container'>
                 <div className='desc-container'>
                     <p className='desc'>{desc}</p>
@@ -12,6 +21,10 @@ const ProjectCard = ({title, desc, img}) => {
             </div>
             <h1 className='title'>{title}</h1>
         </div>
+        :
+        <ProjectModal title={title} img={img} descDetail={descDetail} />
+        }
+    </div>
     )
 }
 
