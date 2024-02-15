@@ -15,14 +15,18 @@ const ProjectCard = ({title, desc, descDetail, img}) => {
         <div className="project-card" onClick={handleClick}>
             <div className='img-container'>
                 <div className='desc-container'>
-                    <p className='desc'>{desc}</p>
+                    <div className='desc'>{desc}</div>
                 </div>
                 <img className='photo' src={img}></img>
             </div>
-            <h1 className='title'>{title}</h1>
+            <div className='sub-title'>{title}</div>
         </div>
         :
-        <ProjectModal title={title} img={img} descDetail={descDetail} />
+        <ProjectModal 
+        title={title} 
+        img={img} 
+        descDetail={descDetail}
+        onClose={() => setDetails(false)} />
         }
     </div>
     )

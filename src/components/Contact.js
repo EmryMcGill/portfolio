@@ -8,7 +8,7 @@ const Contact = () => {
 
     return (
         <div className="contact">
-            <h1 className="title">Contact</h1>
+            <h1 className="section-title">Contact</h1>
             <form className="contact" onSubmit={handleSubmit}>
                 <div className="name-container">
                     <input 

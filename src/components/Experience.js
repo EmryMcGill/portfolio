@@ -1,15 +1,15 @@
 import ExperienceCard from "./ExperienceCard"
-import Tecklogo from '../tecklogo.png'
-import cbt from '../cbt.png'
-import justice from '../gtjs.jpeg'
-import rossland from '../rossland_logo.png'
-import nugget from '../nugget.jpg'
+import Tecklogo from '../photos/tecklogo.png'
+import cbt from '../photos/cbt.png'
+import justice from '../photos/gtjs.jpeg'
+import rossland from '../photos/rossland_logo.png'
+import nugget from '../photos/nugget.jpg'
 
 
 const Experience = () => {
     return (
         <div className="experience">
-            <h1 className="title">Experience</h1>
+            <h1 className="section-title">Experience</h1>
             <div className="experience-container">
                 <ExperienceCard 
                 company='Teck Resources,'

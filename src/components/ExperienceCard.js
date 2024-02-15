@@ -3,7 +3,7 @@ const ExperienceCard = ({ company, position, desc, date, location, img }) => {
         <div className="experience-card">
             <div className="info-container">
                 <div className='title-container'>
-                    <h1 className="position">{position}</h1>
+                    <div className="sub-title">{position}</div>
                     <div className='company-container'>
                         <h2 className="company">{company}</h2>
                         <h2 className='location'>{location}</h2>

@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer">
             <div className="contact-container">
                 <h2>Contact</h2>
-                <button className="email-btn" onClick={copyEmail}>emrymcgill@gmail.com
+                <button className="email-btn" onClick={copyEmail}>email
                 </button>
                 <a className="git-btn"target="_blank"  href="https://www.linkedin.com/in/emry-mcgill-ba8921238">LinkedIn</a>
                 <a className="git-btn"target="_blank"  href="https://github.com/emrymcgill">Github</a>

@@ -4,7 +4,7 @@ const EducationCard = ({ school, program, desc, date, location, img }) => {
         <div className="education-card">
             <div className="info-container">
                 <div className='title-container'>
-                    <h1 className="school">{school}</h1>
+                    <div className="sub-title">{school}</div>
                     <h2 className="program">{program}</h2>
                     <p className="desc">{desc}</p>
                 </div>

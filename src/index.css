@@ -7,7 +7,7 @@
   --error: #e7195a;
 }
 body {
-  background: #dbdbdb;
+  background: #efeee1;
   margin: 0;
   font-family: "Montserrat";
 }
@@ -21,11 +21,10 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #2b2b2b;
-  border-radius: .5em;
   position: sticky;
   top: 0;
   transition: 0.2s;
-  z-index: 100;
+  z-index: 99;
 }
 
 .navbar .title-container {
@@ -37,12 +36,13 @@ body {
   font-size: 1.5em;
   margin: 0;
   color: white;
+  font-weight: normal;
 }
 
 .port {
   font-size: 1.5em;
   margin: 0;
-  font-weight: 100;
+  font-weight: 200;
   color: #fff000;
   margin-left: .5em;
 }
@@ -57,12 +57,14 @@ body {
   color: white;
   padding: 0 1.5em;
   transition: 0.1s;
+  font-weight:normal;
 }
 
 .navbar h3:hover {
   color: #fff000;
   transition: 0.15s;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .navbar .link {
@@ -73,6 +75,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* STANDARD SECTION STYLES */
+
+.section-title {
+  margin: 0;
+  margin-top: 2em;
+  margin-bottom: .5em;
+  font-weight: 600;
+}
+
+.sub-title {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+button {
+  margin: 0;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  padding: .5em;
+  border-radius: .2em;
+  margin-left: .5em;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+button:hover {
+  background-color: #000000;
+  cursor: pointer;
+  font-weight: 800;
 }
 
 /* HOME */
@@ -93,7 +128,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: .5em;
   height: 75vh;
 }
 
@@ -106,7 +140,18 @@ body {
 .about .photo {
   width: 10em;
   border-radius: 50%;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+.about .btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.about .email-btn {
+  margin-left: 0;
 }
 
 /* PROJECTS */
@@ -125,6 +170,7 @@ body {
 
 .project-card {
   padding: 1em;
+  padding-bottom: .5em;
   margin: .5em;
   background-color: white;
   display: flex;
@@ -136,26 +182,29 @@ body {
   cursor: pointer;
 }
 
-.projects .title {
-  margin: 0;
-  margin-top: .5em;
-  margin-bottom: .5em;
+.project-card:hover .sub-title {
+  font-weight: bold;
 }
+
+
 
 .project-card .img-container {
   margin: 0;
+  margin-bottom: .5em;
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  width: 20vw;
-  height: 20vw;
+  width: 18vw;
+  height: 18vw;
+  transition: .1s;
 }
 
 .project-card .photo {
-  width: 20vw;
-  height: 20vw;
+  width: 18vw;
+  height: 18vw;
+  transition: .1s;
 }
 
 .project-card .img-container .desc-container {
@@ -177,18 +226,20 @@ body {
   color: white;
 }
 
-.project-card .img-container:hover .desc-container {
+.project-card:hover .desc-container {
   visibility: visible;
 }
 
-.project-card .title-container {
-  width: 100%;
+.project-card:hover .img-container {
+  width: 20vw;
+  height: 20vw;
+  transition: .1s;
 }
 
-.project-card .title {
-  margin: 0;
-  margin-top: .5em;
-  font-size: 1.5em;
+.project-card:hover .photo {
+  width: 20vw;
+  height: 20vw;
+  transition: .1s;
 }
 
 .modal {
@@ -215,7 +266,7 @@ body {
 .modal .row1 {
   display: flex;
   flex-direction: row;
-  margin-bottom: .5em;
+  margin-bottom: 2em;
 }
 
 .modal .title {
@@ -231,31 +282,17 @@ body {
   flex: 1;
 }
 
-.modal .action-btns {
-}
-
-.modal button {
-  margin: 0;
-  border: none;
-  font-family: 'Montserrat';
-  font-weight: bold;
-  padding: .5em;
+.modal .close-btn {
+  height: 2em;
+  width: 2em;
+  background-color: #e7195a;
+  color: white;
   border-radius: .2em;
 }
 
-.modal .demo-btn {
-  margin-right: 1em;
-  height: 100%;
-  background-color: #fff000;
-}
-
-.modal .git-btn {
-  margin-right: 1em;
-  height: 100%;
-}
-
-.modal .close-btn {
-  background-color: #e7195a;
+.modal .close-btn:hover {
+  background-color: #cb154f;
+  cursor: pointer;
 }
 
 .modal .row2 {
@@ -280,6 +317,7 @@ body {
   margin: 0;
   margin-top: 2em;
   margin-bottom: .5em;
+  font-weight: 600;
 }
 
 .skills {
@@ -296,57 +334,39 @@ body {
 }
 
 .skill-card {
-  padding: 0em;
+  padding: .5em;
   margin: .5em;
   background-color: white;
   display: flex;
   align-items: start;
-  flex-direction: column;
+  flex-direction: row;
+  max-width: 50vw;
+  height: max-content;
 }
 
-.skill-card .img-container {
-  margin: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  width: 15vw;
-  height: 15vw;
+.skill-card:hover {
+  cursor: pointer;
 }
 
 .skill-card .photo {
-  width: 80%;
-  height: 80%;
+  width: 20vh;
+  height: 20vh;
+  transition: .1s;
 }
 
-.skill-card .img-container .desc-container {
-  visibility: hidden;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill-card .img-container .desc {
-  margin: 1em;
+.skill-card .desc {
+  margin: .5em;
   text-align: center;
+  justify-content: center;
   font-weight:500;
   font-size: 1em;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
-.skill-card .img-container:hover .desc-container {
-  visibility: visible;
-}
-
-
-.skill-card .title-container {
-  width: 100%;
+.skill-card:hover .photo {
+  width: 22vh;
+  height: 22vh;
+  transition: .1s;
 }
 
 /* EXPERIENCE */
@@ -363,22 +383,15 @@ body {
   flex-wrap: wrap;
 }
 
-.experience .title {
-  margin: 0;
-  margin-top: 2em;
-  margin-bottom: .2em;
-}
-
 .experience-card {
   padding: 0;
-  margin: 1em;
+  margin-bottom: 1em;
   padding-bottom: 0;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  border-radius: .5em;
   overflow: hidden;
   width: 90vw;
 }
@@ -406,16 +419,11 @@ body {
   margin-right: .5em;
 }
 
-.experience-card h1 {
-  margin: 0;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .experience-card h2 {
   margin: 0;
   margin-top: .5em;
   font-size: 1em;
+  font-weight: 500;
 }
 
 .experience-card .date-container {
@@ -425,8 +433,7 @@ body {
 .experience-card .date {
   margin: 0;
   padding: .5em;
-  border-radius: .5em;
-  background-color: rgba(255, 240, 0, .4);
+  background-color: rgba(255, 240, 0, 1);
   font-size: .8em;
 }
 
@@ -444,22 +451,15 @@ body {
   flex-wrap: wrap;
 }
 
-.education .title {
-  margin: 0;
-  margin-top: 2em;
-  margin-bottom: .2em;
-}
-
 .education-card {
   padding: 0;
-  margin: 1em;
+  margin-bottom: 1em;
   padding-bottom: 0;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border-radius: .5em;
   overflow: hidden;
   width: 90vw;
 }
@@ -476,23 +476,17 @@ body {
   height: 10em;
 }
 
-.education-card h1 {
-  margin: 0;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .education-card h2 {
   margin: 0;
   margin-top: .5em;
   font-size: 1em;
+  font-weight: 500;
 }
 
 .education-card .date {
   margin: 0;
   padding: .5em;
-  border-radius: .5em;
-  background-color: rgba(255, 240, 0, .4);
+  background-color: rgba(255, 240, 0, 1);
   font-size: .8em;
 }
 
@@ -509,12 +503,6 @@ body {
   flex-direction: column;
 }
 
-.contact .title {
-  margin: 0;
-  margin-top: 2em;
-  margin-bottom: .2em;
-}
-
 .contact .name {
   width:20em;
   margin-bottom: .5em;
@@ -522,7 +510,6 @@ body {
   font-size: 1em;
   padding: .5em;
   border: none;
-  border-radius: .5em;
 }
 
 .contact .email {
@@ -532,7 +519,6 @@ body {
   font-size: 1em;
   padding: .5em;
   border: none;
-  border-radius: .5em;
 }
 
 .contact .message {
@@ -543,12 +529,10 @@ body {
   font-size: 1em;
   padding: .5em;
   border: none;
-  border-radius: .5em;
 }
 
 .contact .submit-button {
   border: none;
-  border-radius: .5em;
   font-size: .9em;
   font-weight: bold;
   font-family: "Montserrat";
@@ -557,6 +541,7 @@ body {
   color: white;
   margin-bottom: 1em;
   text-align: center;
+  border-radius: .2em;
 }
 
 .contact .submit-button:hover {
@@ -594,11 +579,13 @@ body {
   font-size: 1em;
   padding: 0;
   margin-bottom: .5em;
+  font-weight: normal;
 }
 
 .footer .email-btn:hover {
   color: #fff000;
   cursor: pointer;
+  font-weight: 800;
 }
 
 .footer .git-btn {
@@ -615,4 +602,5 @@ body {
 .footer .git-btn:hover {
   color: #fff000;
   cursor: pointer;
+  font-weight: 800;
 }

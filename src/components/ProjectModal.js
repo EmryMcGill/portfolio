@@ -1,17 +1,24 @@
+import { IoClose } from "react-icons/io5";
 
+const ProjectModal = ({ title, img, descDetail, onClose }) => {
 
-const ProjectModal = ({ title, img, descDetail }) => {
+    
+
     return (
-        <div className="modal">
-            <div className="modal-content">
+        <div className="modal" onClick={onClose}>
+            <div 
+            className="modal-content" 
+            onClick={e => e.stopPropagation()}>
                 <div className="row1">
                     <h1 className="title">{title}</h1>
                     <div className="btn-container">
                         <div className="action-btns">
-                            <button className="demo-btn">Demo</button>
-                            <button className="git-btn">Github</button>
+                            <button>Demo</button>
+                            <button>Github</button>
                         </div>
-                        <button className="close-btn">X</button>
+                        <IoClose
+                        className="close-btn" 
+                        onClick={onClose} />
                     </div>
                 </div>
                 <div className="row2">

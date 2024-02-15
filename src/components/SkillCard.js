@@ -1,12 +1,18 @@
+import { useState } from "react" 
+
+
 const SkillCard = ({ desc, img }) => {
+
+    const [descToggle, setDescToggle] = useState(false);
+
+    const toggleDesc = () => {
+        setDescToggle(!descToggle);
+    }
+
     return(
-        <div className="skill-card">
-            <div className='img-container'>
-                <div className='desc-container'>
-                    <p className='desc'>{desc}</p>
-                </div>
-                <img className='photo' src={img}></img>
-            </div>
+        <div className="skill-card" onClick={toggleDesc}>
+            <img className='photo' src={img}></img>            
+            {descToggle ? <div className='desc'>{desc}</div> : <></>}
         </div>
     )
 }
