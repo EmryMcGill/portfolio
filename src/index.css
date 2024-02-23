@@ -3,8 +3,8 @@
 
 /* layout */
 :root {
-  --primary: #1a7bac;
-  --error: #e7195a;
+  --primary: #19b5fe;
+  --dark: #171717;
 }
 body {
   background: #efeee1;
@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2b2b2b;
+  background-color: var(--dark);
   position: sticky;
   top: 0;
   transition: 0.2s;
@@ -43,7 +43,7 @@ body {
   font-size: 1.5em;
   margin: 0;
   font-weight: 200;
-  color: #fff000;
+  color: var(--primary);
   margin-left: .5em;
 }
 
@@ -57,14 +57,13 @@ body {
   color: white;
   padding: 0 1.5em;
   transition: 0.1s;
-  font-weight:normal;
+  font-weight:bold;
 }
 
 .navbar h3:hover {
-  color: #fff000;
-  transition: 0.15s;
+  color: var(--primary);
+  transition: 0.1s;
   cursor: pointer;
-  font-weight: bold;
 }
 
 .navbar .link {
@@ -100,14 +99,17 @@ button {
   padding: .5em;
   border-radius: .2em;
   margin-left: .5em;
-  background-color: #2b2b2b;
+  background-color: var(--dark);
   color: white;
+  transition: .1s;
 }
 
 button:hover {
   background-color: #000000;
   cursor: pointer;
   font-weight: 800;
+  color: var(--primary);
+  transition: .1s;
 }
 
 /* HOME */
@@ -150,6 +152,32 @@ button:hover {
   margin-bottom: 1em;
 }
 
+.btn {
+  margin: 0;
+  border: none;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  padding: .5em;
+  border-radius: .2em;
+  margin-left: .5em;
+  background-color: var(--dark);
+  color: white;
+  transition: .1s;
+  text-decoration: none;
+  font-size: .8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #000000;
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--primary);
+  transition: .1s;
+}
+
 .about .email-btn {
   margin-left: 0;
 }
@@ -182,12 +210,6 @@ button:hover {
   cursor: pointer;
 }
 
-.project-card:hover .sub-title {
-  font-weight: bold;
-}
-
-
-
 .project-card .img-container {
   margin: 0;
   margin-bottom: .5em;
@@ -211,8 +233,8 @@ button:hover {
   visibility: hidden;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
+  width: 20vw;
+  height: 20vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,8 +455,9 @@ button:hover {
 .experience-card .date {
   margin: 0;
   padding: .5em;
-  background-color: rgba(255, 240, 0, 1);
+  background-color: var(--primary);
   font-size: .8em;
+  color: white;
 }
 
 /* EDUCATION */
@@ -486,8 +509,9 @@ button:hover {
 .education-card .date {
   margin: 0;
   padding: .5em;
-  background-color: rgba(255, 240, 0, 1);
+  background-color: var(--primary);
   font-size: .8em;
+  color: white
 }
 
 .education-card img {
@@ -537,7 +561,7 @@ button:hover {
   font-weight: bold;
   font-family: "Montserrat";
   padding: .8em;
-  background-color: #038aff;
+  background-color: var(--primary);
   color: white;
   margin-bottom: 1em;
   text-align: center;
@@ -545,7 +569,7 @@ button:hover {
 }
 
 .contact .submit-button:hover {
-  background-color: #2d55ff;
+  background-color: #16aaef;
   cursor: pointer;
 }
 
@@ -556,7 +580,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   height: 20em;
-  background-color: #2b2b2b;
+  background-color: var(--dark);
   padding-left: 1em;
 }
 
@@ -567,7 +591,7 @@ button:hover {
 }
 
 .footer h2 {
-  color: #fff000;
+  color: var(--primary);
 }
 
 .footer .email-btn {
@@ -583,9 +607,8 @@ button:hover {
 }
 
 .footer .email-btn:hover {
-  color: #fff000;
+  color: var(--primary);
   cursor: pointer;
-  font-weight: 800;
 }
 
 .footer .git-btn {
@@ -600,7 +623,6 @@ button:hover {
 }
 
 .footer .git-btn:hover {
-  color: #fff000;
+  color: var(--primary);
   cursor: pointer;
-  font-weight: 800;
 }

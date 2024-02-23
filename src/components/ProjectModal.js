@@ -1,6 +1,6 @@
 import { IoClose } from "react-icons/io5";
 
-const ProjectModal = ({ title, img, descDetail, onClose }) => {
+const ProjectModal = ({ title, img, descDetail, onClose, git, demo, gitLink, demoLink }) => {
 
     
 
@@ -13,8 +13,20 @@ const ProjectModal = ({ title, img, descDetail, onClose }) => {
                     <h1 className="title">{title}</h1>
                     <div className="btn-container">
                         <div className="action-btns">
-                            <button>Demo</button>
-                            <button>Github</button>
+                            {demo ? 
+                            <a target="_blank"  href={demoLink}>
+                                <button>Demo</button>
+                            </a>
+                            :
+                            <></>
+                            }
+                            {git ?
+                            <a target="_blank"  href={gitLink}>
+                                <button>Github</button>
+                            </a>
+                            :
+                            <></>
+                            }
                         </div>
                         <IoClose
                         className="close-btn" 

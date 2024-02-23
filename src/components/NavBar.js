@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll'
 import { useState } from 'react'
+import resume from '../CS_Resume.pdf'
 
 const NavBar = () => {
 
@@ -31,29 +32,27 @@ const NavBar = () => {
             </div>
 
             <div className='menu-buttons'>
-                <Link className='link' smooth to='projects' offset={-50}>
+                <Link className='link' smooth to='projects'>
                     <h3>Projects</h3>
                 </Link>
 
-                <Link className='link' to='/'>
+                <Link className='link' smooth to='skills'>
                     <h3>Skills</h3>
                 </Link>
 
-                <Link className='link' to='/'>
+                <Link className='link' smooth to='experience'>
                     <h3>Experience</h3>
                 </Link>
 
-                <Link className='link' to='/'>
+                <Link className='link' smooth to='education'>
                     <h3>Education</h3>
                 </Link>
 
-                <Link className='link' to='/'>
+                <Link className='link' smooth to='contact'>
                     <h3>Contact</h3>
                 </Link>
 
-                <Link className='link' to='/'>
-                    <h3>Resume</h3>
-                </Link>
+                <a  style={{textDecoration: 'none'}} target='_blank' href={resume}><h3>Resume</h3></a>
             </div>
         </div>
     )

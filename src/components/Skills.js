@@ -16,25 +16,24 @@ const Skills = () => {
             <div className="skills-container">
                 <SkillCard 
                 img={reactLogo} 
-                desc='I have experience using React from building this
+                desc='I have experience using React.js from building this
                 website as well as a Todo web app.' />
                 <SkillCard 
                 img={nodeLogo} 
-                desc='I used Node as a backend for my Todo web app.' />
+                desc='I used Node.js as a backend for my Todo web app.' />
                 <SkillCard 
                 img={bashLogo} 
-                desc='I have taken a low level operating systems course where I learnt how 
-                to interact with the Bash shell and write scripts. I also use Linux as my operating
-                system so I use the command line daily.' />
+                desc='
+                Using Linux as my primary operating system has made me adept 
+                in daily command-line operations, proficiently writing scripts
+                 for tasks such as automating file backups, or using command-line tools like Docker.' />
                 <SkillCard 
                 img={jsLogo} 
                 desc='' />
-                <SkillCard 
-                img={javaLogo} 
-                desc='I have taken multiple algorithms and data sctructure courses where I used
-                Java to impliment what we learnt.' />
                 <SkillCard img={cLogo} desc='I have taken multiple operating systems courses where I used C to
-                impliment a shell, a thread scheduler, and a simple file system.' />
+                impliment a shell, a thread scheduler, and a simple file system. Through these 
+                projects I learned how to use C to manipulate memory and interact with different
+                parts of the operating system.' />
                 <SkillCard img={pythonLogo} desc='The intro computer science class I took used Python so
                 I learnt the fundimentals of programming using Python.' />
             </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ProjectModal from './ProjectModal';
 
-const ProjectCard = ({title, desc, descDetail, img}) => {
+const ProjectCard = ({title, desc, descDetail, img, git, demo, gitLink, demoLink}) => {
 
     const [details, setDetails] = useState(false);
 
@@ -25,6 +25,10 @@ const ProjectCard = ({title, desc, descDetail, img}) => {
         <ProjectModal 
         title={title} 
         img={img} 
+        git={git}
+        demo={demo}
+        demoLink={demoLink}
+        gitLink={gitLink}
         descDetail={descDetail}
         onClose={() => setDetails(false)} />
         }
