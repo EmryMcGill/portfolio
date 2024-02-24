@@ -3,9 +3,8 @@ import reactLogo from '../photos/react-logo.png'
 import jsLogo from '../photos/js-logo.png'
 import nodeLogo from '../photos/node.png'
 import bashLogo from '../photos/bash.jpg'
-import javaLogo from '../photos/java.jpg'
 import cLogo from '../photos/c-logo.png'
-import pythonLogo from '../photos/python.png'
+import docker from '../photos/docker.png'
 
 const Skills = () => {
     return(
@@ -20,7 +19,8 @@ const Skills = () => {
                 website as well as a Todo web app.' />
                 <SkillCard 
                 img={nodeLogo} 
-                desc='I used Node.js as a backend for my Todo web app.' />
+                desc='Can build backend REST APIs for web apps using the Express.js framework. An 
+                example of this is the RESTful CRUD API I made for my Todo web app.' />
                 <SkillCard 
                 img={bashLogo} 
                 desc='
@@ -29,13 +29,17 @@ const Skills = () => {
                  for tasks such as automating file backups, or using command-line tools like Docker.' />
                 <SkillCard 
                 img={jsLogo} 
-                desc='' />
+                desc='
+                Working with React and Node has provided me with 
+                extensive experience in JavaScript development.' />
                 <SkillCard img={cLogo} desc='I have taken multiple operating systems courses where I used C to
                 impliment a shell, a thread scheduler, and a simple file system. Through these 
                 projects I learned how to use C to manipulate memory and interact with different
                 parts of the operating system.' />
-                <SkillCard img={pythonLogo} desc='The intro computer science class I took used Python so
-                I learnt the fundimentals of programming using Python.' />
+                <SkillCard img={docker} desc='I have experience using docker to self host 
+                multiple applications such as Nextcloud. I have also used dockerfiles to 
+                to create docker images for my todo web app so that it can be run in a 
+                pre-configured environment on any computer.' />
             </div>
         </div>
     )

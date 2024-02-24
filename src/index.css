@@ -202,7 +202,7 @@ button:hover {
   margin: .5em;
   background-color: white;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -360,7 +360,7 @@ button:hover {
   margin: .5em;
   background-color: white;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: row;
   max-width: 50vw;
   height: max-content;
@@ -421,7 +421,7 @@ button:hover {
 .experience-card .info-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   padding: .5em;
 }
@@ -455,9 +455,10 @@ button:hover {
 .experience-card .date {
   margin: 0;
   padding: .5em;
-  background-color: var(--primary);
+  background: none;
+  border: 1px solid black;
   font-size: .8em;
-  color: white;
+  color: rgb(0, 0, 0)
 }
 
 /* EDUCATION */
@@ -490,7 +491,7 @@ button:hover {
 .education-card .info-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   padding: .5em;
 }
@@ -509,9 +510,10 @@ button:hover {
 .education-card .date {
   margin: 0;
   padding: .5em;
-  background-color: var(--primary);
+  background: none;
+  border: 1px solid black;
   font-size: .8em;
-  color: white
+  color: rgb(0, 0, 0)
 }
 
 .education-card img {
@@ -587,7 +589,7 @@ button:hover {
 .footer .contact-container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .footer h2 {

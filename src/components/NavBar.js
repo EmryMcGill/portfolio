@@ -52,7 +52,7 @@ const NavBar = () => {
                     <h3>Contact</h3>
                 </Link>
 
-                <a  style={{textDecoration: 'none'}} target='_blank' href={resume}><h3>Resume</h3></a>
+                <a  style={{textDecoration: 'none'}} rel='noreferrer' target='_blank' href={resume}><h3>Resume</h3></a>
             </div>
         </div>
     )

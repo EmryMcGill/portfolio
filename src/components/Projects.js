@@ -1,7 +1,5 @@
 import ProjectCard from "./ProjectCard"
-import project1 from '../photos/project1.png'
 import gridImg from '../photos/grid.png'
-import robot1 from '../photos/robot1.JPG'
 import robot2 from '../photos/robot2.png'
 import portfolio from '../photos/portfolio.png'
 import todo from '../photos/todo.png'
@@ -17,13 +15,15 @@ const Projects = () => {
                 title="Todo Web App" 
                 img={todo} 
                 demo={true}
+                demoLink='https://youtu.be/ybe5hq9USdo'
                 git={true}
                 gitLink='https://github.com/EmryMcGill/mytodos'
                 desc='A todo web app built using the MERN stack and able to be self hosted
                 using Docker.'
-                descDetail='This todo web app was built using the MERN stack 
-                (MongoDB, React, Express, and Node). I have also configured Docker images
-                for the application so that it can be self hosted on a home server. A 
+                descDetail='I built the frontend of the todo app with React, and built 
+                a RESTful CRUD API using Node.js and Express.js for the backend. I then
+                connected the backend to a mongoDB database to store the task list. 
+                I have also configured Docker images for the application so that it can be self hosted on a home server. A 
                 link to the Dockerhub images is in the Github Repo.' />
                 
                 <ProjectCard 
@@ -57,7 +57,8 @@ const Projects = () => {
                 title="Grid" 
                 img={gridImg}
                 git={false}
-                demo={false}
+                demo={true}
+                demoLink='https://play.google.com/store/apps/details?id=com.Incendio.Grid&hl=de&gl=US'
                 desc='A mobile game build with the Unity game engine.' 
                 descDetail='Grid is a mobile game avalible on the Google Play Store for Android devices. 
                 It is a simple memory game where you have to memorize a safe path through a grid

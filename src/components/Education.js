@@ -10,8 +10,9 @@ const Education = () => {
             <EducationCard 
                     school='McGill University' 
                     program='B.Sc Major Computer Science'
-                    desc='I am currently in my third year of 
-                    Computer Science at McGill University.'
+                    desc='I am currently wrapping up my third year pursuing a Computer Science 
+                    degree at McGill University while also taking part in a one-semester study abroad
+                     program in New Zealand.'
                     date='Sept 2021 - current'
                     img={mcgilllogo} />
             </div>
