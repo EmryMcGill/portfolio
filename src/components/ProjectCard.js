@@ -17,7 +17,7 @@ const ProjectCard = ({title, desc, descDetail, img, git, demo, gitLink, demoLink
                 <div className='desc-container'>
                     <div className='desc'>{desc}</div>
                 </div>
-                <img className='photo' src={img}></img>
+                <img className='photo' src={img} alt=''></img>
             </div>
             <div className='sub-title'>{title}</div>
         </div>

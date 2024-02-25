@@ -14,14 +14,14 @@ const ProjectModal = ({ title, img, descDetail, onClose, git, demo, gitLink, dem
                     <div className="btn-container">
                         <div className="action-btns">
                             {demo ? 
-                            <a target="_blank"  href={demoLink}>
+                            <a rel="noreferrer" target="_blank"  href={demoLink}>
                                 <button>Demo</button>
                             </a>
                             :
                             <></>
                             }
                             {git ?
-                            <a target="_blank"  href={gitLink}>
+                            <a rel="noreferrer" target="_blank"  href={gitLink}>
                                 <button>Github</button>
                             </a>
                             :
@@ -34,7 +34,7 @@ const ProjectModal = ({ title, img, descDetail, onClose, git, demo, gitLink, dem
                     </div>
                 </div>
                 <div className="row2">
-                    <img className='photo' src={img}></img>
+                    <img className='photo' src={img} alt=''></img>
                     <p className='desc'>{descDetail}</p>
                 </div>
             </div>

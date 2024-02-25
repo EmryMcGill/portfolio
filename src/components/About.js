@@ -9,11 +9,11 @@ const About = () => {
 
     return (
         <div className="about">
-            <img className='photo' src={profile} alt="Profile Picture" />
+            <img className='photo' src={profile} alt='Profile' />
             <div className='btn-container'>
                 <button className='email-btn' onClick={copyEmail}>email</button>
-                <a className="btn" target="_blank"  href="https://www.linkedin.com/in/emry-mcgill-ba8921238">LinkedIn</a>
-                <a className="btn" target="_blank"  href="https://github.com/emrymcgill">Github</a>
+                <a className="btn" rel="noreferrer" target="_blank"  href="https://www.linkedin.com/in/emry-mcgill-ba8921238">LinkedIn</a>
+                <a className="btn" rel="noreferrer" target="_blank"  href="https://github.com/emrymcgill">Github</a>
             </div>
             <p>Hi! My name is Emry McGill, I am a third year student
                 at McGill University with a major in Computer Science.

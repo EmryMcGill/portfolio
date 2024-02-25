@@ -12,7 +12,7 @@ const EducationCard = ({ school, program, desc, date, location, img }) => {
                     <h3 className="date">{date}</h3>
                 </div>
             </div>
-            <img src={img}></img>
+            <img src={img} alt=''></img>
     </div>
     )
 }
