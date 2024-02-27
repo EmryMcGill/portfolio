@@ -42,6 +42,17 @@ const Experience = () => {
                 date='Feb 2019 - May 2019'
                 img={rossland} />
                 <ExperienceCard 
+                company='Teck Resources,'
+                location='Trail, BC'  
+                position='Cathode Utility'
+                desc='Contributed to a small team in zinc electrolytic operations. 
+                Managed cathode maintenance, operated forklifts, cranes, and hoists 
+                proficiently, and seamlessly stepping in to cover other operator 
+                responsibilities as required, always with a strong commitment to 
+                ensuring a safe working environment for myself and my team.'
+                date='May 2023 - August 2023'
+                img={Tecklogo} />
+                <ExperienceCard 
                 company='Mountain Nugget Chocolate Store'
                 location='Rossland, BC'  
                 position='Retail and Kitchen'
@@ -54,17 +65,6 @@ const Experience = () => {
                 standards to consistently exceed customer expectations.'
                 date='Oct 2018 - June 2021'
                 img={nugget} />
-                <ExperienceCard 
-                company='Teck Resources,'
-                location='Trail, BC'  
-                position='Cathode Utility'
-                desc='Contributed to a small team in zinc electrolytic operations. 
-                Managed cathode maintenance, operated forklifts, cranes, and hoists 
-                proficiently, and seamlessly stepping in to cover other operator 
-                responsibilities as required, always with a strong commitment to 
-                ensuring a safe working environment for myself and my team.'
-                date='May 2023 - August 2023'
-                img={Tecklogo} />
             </div>
         </div>
     )
