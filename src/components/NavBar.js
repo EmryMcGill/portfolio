@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll'
 import { useState } from 'react'
-import resume from '../CS_Resume.pdf'
+import resume from '../Emry_McGill_Resume.pdf'
 
 const NavBar = () => {
 
@@ -53,7 +53,10 @@ const NavBar = () => {
                 </Link>
 
                 <a  style={{textDecoration: 'none'}} rel='noreferrer' target='_blank' href={resume}><h3>Resume</h3></a>
+           
             </div>
+            <h3 className='menu-btn'>Menu</h3>
+
         </div>
     )
 }

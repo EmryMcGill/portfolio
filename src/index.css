@@ -37,6 +37,7 @@ body {
   margin: 0;
   color: white;
   font-weight: normal;
+  text-wrap: nowrap;
 }
 
 .port {
@@ -68,6 +69,21 @@ body {
 
 .navbar .link {
   text-decoration: none;
+}
+
+.navbar .menu-btn {
+  display: none;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .navbar .menu-btn {
+    display:block;
+  }
+
+  .navbar .link, a {
+    display: none;
+  }
 }
 
 .navbar .menu-buttons {
